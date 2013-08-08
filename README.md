@@ -5,11 +5,11 @@
 
 Website for locating bill information, voting record, social media and news about a member of Congress.
 
-<!-- Currently hosted at: [)
+<!-- Currently hosted at: [herokuapp])
  -->
 
 ## SOURCES:
-* The Sunlight Congress API is a live JSON API for the people and work of Congress, provided by the Sunlight Foundation.
+The Sunlight Congress API is a live JSON API for the people and work of Congress, provided by the Sunlight Foundation.
   Visit them online:  http://sunlightlabs.github.io/congress/
 
 Sunlight API Core Information
