@@ -147,7 +147,12 @@ ap Congress.bills.first
 },
 "withdrawn_cosponsors_count" => 0
 ________________________________________________________________________________
-
+   <!-- GAHH! -->
+   <!--  .controls
+      = form_tag static_pages_submit_path do
+        = label_tag(:query, "Paste Here:")
+        %input{:name => "state_code", :placeholder => "Example: OR", :type => "text", :required => true}/
+        = submit_tag("Search", :class => "btn btn-primary btn-large") -->
 
 
 
