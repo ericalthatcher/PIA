@@ -40,7 +40,7 @@ end
 #   end
 # end
 
-# class VoteRecord < Legislator < Bills
+# class VoteRecord
 #   def legislator
 #   end
 
@@ -54,7 +54,7 @@ end
 #   end
 # end
 
-# class Vote < Legislator < Bills
+# class Vote
 #   def legislator
 #   end
 

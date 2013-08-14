@@ -1,0 +1,26 @@
+%body
+  %header.navbar.navbar-fixed-top.navbar-inverse
+    .navbar-inner
+      .container
+        = link_to "PIA", 'static_pages#home', id: "logo"
+        %nav
+          %ul.nav.pull-left
+            %li= link_to "Home", '/home'
+            %li= link_to "About",'/about'
+<!--             / FIXME make sign in page and form system -->
+          %ul.nav.pull-right
+            %li= link_to "Sign in", '#'
+        .row-fluid
+    .control-group
+      %label.control-label{:for => "textinput"}
+    .controls
+      = form_tag static_pages_submit_path do
+        = label_tag(:query, "Paste Here:")
+        %input{:name => "query", :placeholder => "http://example.com/article.html", :type => "text", :required => true}/
+        = submit_tag("Search", :class => "btn btn-primary btn-large")
+  .row-fluid
+    = link_to "Enter your two letter state abbreviation", search_path, :class => "btn btn-large btn-primary"
+     %p= Congress.legislators_locate(zip)
+.center.hero-unit
+  %h1 About
+  %p
