@@ -11,5 +11,11 @@
             %li= link_to "Sign up", '#'
             %li= link_to "Sign in", '#'
   .center.hero-unit
-    %h1 Submit
-    %p Where results of congressional search by zip will be displayed
+    %h3 Senators
+    %p
+      = @test_legislator.first_name + " " + @test_legislator.last_name + ", " + "\(#{@test_legislator.party}\)" + " " + @test_legislator.state
+    %p
+      %a{:href => "http://www.twitter.com/#{@test_legislator.twitter_id}"} Twitter
+    %p
+      %a{:href => "http://www.facebook.com/#{@test_legislator.facebook_id}"} Facebook
+    %h3 Representatives

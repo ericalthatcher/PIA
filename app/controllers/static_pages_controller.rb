@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  require 'search_congress'
   def about
   end
 
@@ -6,10 +7,11 @@ class StaticPagesController < ApplicationController
   end
 
   def submit
-    # begin
-    #   # need to switch to my params, etc.
+    begin
+      # require 'search_congress.rb'
+      @test_legislator = Nancy.new
     #   @query_text = params[:zip_code]
     #   @apitext = Legislator.new(@query_text)
-    # end
+    end
   end
 end
