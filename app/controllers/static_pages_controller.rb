@@ -6,12 +6,11 @@ class StaticPagesController < ApplicationController
   def home
   end
 
+#  creates new instance of Nancy class, which allows the return of results
+#  for Nancy Peloci.
   def submit
     begin
-      # require 'search_congress.rb'
       @test_legislator = Nancy.new
-    #   @query_text = params[:zip_code]
-    #   @apitext = Legislator.new(@query_text)
     end
   end
 end

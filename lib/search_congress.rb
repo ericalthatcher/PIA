@@ -1,3 +1,42 @@
+require 'awesome_print'
+require 'congress'
+
+class Nancy
+# ---------------------------------------------------------------------- #
+#  Get rid of apikey in code asap - this is really bad practice          #
+# ---------------------------------------------------------------------- #
+  def initialize
+    Congress.key = "#{ENV["CONGRESS_API_KEY"]}"
+    @test_results = Congress.legislators_locate(94107)
+  end
+# ---------------------------------------------------------------------- #
+#  Accesses the array inside the hash based on index number              #
+# ---------------------------------------------------------------------- #
+  def first_name
+    return @test_results["results"][0]["first_name"]
+  end
+# ---------------------------------------------------------------------- #
+#  if a method is missing it searches through the hash keys and returns  #
+#  matching value if found and any additional arguments                  #
+# ---------------------------------------------------------------------- #
+  def method_missing(key, *args)
+    return @test_results["results"][0][key.to_s]
+  end
+end
+
+
+
+# legislators = []
+
+# Congress.legislators.each do |legislator|
+#   legislators << Legislator.new(legislator)
+# end
+
+# legislators.map{|legislator| ap legislator }
+# # @test_results = Congress.legislators_locate(94107)
+# # @test_legislator = @test_results["results"][0]["first_name"]
+
+# run in terminal by typing ruby congress.rb while in the lib folder
 # class Legislator
 #   attr_accessor :apitext
 
@@ -75,42 +114,6 @@
 # ----------------------------------------------------------------------
 #  Demonstrates that Congress gem returns legislator information.
 #  Q:  Why do I need to require congress and ap now...should be at top?
-require 'awesome_print'
-require 'congress'
-
-# Congress.key = "6e58b9075b9f4244aea471ee0e066e19"
-
-# legislators = []
-
-# Congress.legislators.each do |legislator|
-#   legislators << Legislator.new(legislator)
-# end
-
-# legislators.map{|legislator| ap legislator }
-# # @test_results = Congress.legislators_locate(94107)
-# # @test_legislator = @test_results["results"][0]["first_name"]
-
-class Nancy
-  # attr_accessor :test_legislator
-
-  def initialize
-    Congress.key = "6e58b9075b9f4244aea471ee0e066e19"
-    @test_results = Congress.legislators_locate(94107)
-  end
-
-  def first_name
-    return @test_results["results"][0]["first_name"]
-  end
-
-#  if a method is missing it searches through the hash keys and returns
-#  matching value if found and any additional arguments
-  def method_missing(key, *args)
-    return @test_results["results"][0][key.to_s]
-  end
-end
-
-# run in terminal by typing ruby congress.rb while in the lib folder
-
 
 
 
