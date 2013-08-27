@@ -1,8 +1,18 @@
 Pia::Application.routes.draw do
   root  'static_pages#home'
-  match '/about',   to: 'static_pages#about',   via: 'get'
-  match '/submit', to: 'static_pages#submit', via: 'get'
-  match '/home', to: 'static_pages#home', via: 'get'
+
+  get 'home' => 'static_pages/home'
+  get 'static_pages/home'
+
+  get 'about' => 'static_pages/about'
+  get 'static_pages/about'
+
+  get 'static_pages/submit'
+  post 'static_pages/submit'
+
+  resources :legislators
+
+
 
  #The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

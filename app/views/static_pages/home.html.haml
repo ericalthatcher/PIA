@@ -2,7 +2,11 @@
 %body
 .center.hero-unit
   %h2 Congressional Political Information
-  %p Enter your State's abbreviation below to look up your members of Congress.
-  .row-fluid
-    .control-group
-      %label.control-label{:for => "textinput"}
+  %p Enter your zip code below to look up your members of Congress.
+  .control-group
+    %label.control-label{:for => "textinput"}
+  .controls
+    = form_tag legislators_path, :method => "get" do
+      = label_tag(:zip, "Paste Here:")
+      %input{:name => "zip", :placeholder => "example: 97210", :type => "text", :required => true}/
+      = submit_tag("Search", :class => "btn btn-primary btn-large")

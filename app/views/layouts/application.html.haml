@@ -1,6 +1,6 @@
 %html
   %head
-    %title PIA
+    %title Political Intelligence App
     = stylesheet_link_tag "application", media: "all", |
       "data-turbolinks-track" => true                  |
     = javascript_include_tag "application", "data-turbolinks-track" => true
@@ -11,14 +11,13 @@
   %body
     %header.navbar.navbar-fixed-top.navbar-inverse
       .navbar-inner
-        .container
-          %nav
-            %ul.nav.pull-left
-              %li= link_to "Home", '/home'
-              %li= link_to "About",'/about'
-              / [FIXME] make sign in page and form system
-            %ul.nav.pull-right
-              %li= link_to "Sign up", '#'
-              %li= link_to "Sign in", '#'
+        %nav
+          %ul.nav.pull-left
+            %li= link_to "Home", 'static_pages/home'
+            %li= link_to "About",'/about'
+            / [FIXME] make sign in page and form system
+          %ul.nav.pull-right
+            %li= link_to "Sign up", '#'
+            %li= link_to "Sign in", '#'
     .container
       = yield

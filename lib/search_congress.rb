@@ -2,9 +2,7 @@ require 'awesome_print'
 require 'congress'
 
 class Nancy
-# ---------------------------------------------------------------------- #
-#  Get rid of apikey in code asap - this is really bad practice          #
-# ---------------------------------------------------------------------- #
+
   def initialize
     Congress.key = "#{ENV["CONGRESS_API_KEY"]}"
     @test_results = Congress.legislators_locate(94107)

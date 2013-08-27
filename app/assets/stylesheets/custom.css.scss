@@ -1,23 +1,27 @@
 @import "flat-ui";
 
 .btn.btn-primary {
-  background-color: #bc1a3a ;
+  background-color: #bc1a3a;
 
 }
 
 .btn:hover, .btn:focus {
-  background-color: #791125 !important ;
+  background-color: #791125 !important;
 
 }
 
 
 a:hover {
-  color: #bc1a3a !important ;
+  color: #bc1a3a !important;
   text-decoration: none;
 
 }
 
 .h2 {
-  color: #791125 ;
+  color: #791125;
 
+}
+
+.container {
+  margin-top: 60px;
 }
