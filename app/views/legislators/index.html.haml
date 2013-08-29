@@ -1,3 +1,6 @@
 
 / Legislators is the array of results
+
+
 = @legislators.map { |l| l['first_name'] }.join(', ')
+= @legislators.map { |k| k['chamber'] }

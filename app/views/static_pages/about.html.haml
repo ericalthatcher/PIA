@@ -5,17 +5,18 @@
       .container
         %nav
           %ul.nav.pull-left
-            %li= link_to "Home", '/home'
-            %li= link_to "About",'/about'
+            %li= link_to "Home", 'static/home'
+            %li= link_to "About",'static_pages/about'
           %ul.nav.pull-right
             %li= link_to "Sign up", '#'
             %li= link_to "Sign in", '#'
 .center.hero-unit
   %h2 About
-  %p The originator of the site.
-  %h2 Expansions
+  %p Erica L. Thatcher is a both a budding web developer and a community-minded policy wonk.
+  The Political Intelligence App seeks to marry these two passions.
+  %h2 Upcoming Expansions
   %ul
-    %li Add newsfeed
-    %li Allow search by street address
-    %li Expand government officials to the city level (Oregon)
-    %li Voting record
+    %li Add NYTimes API call to return latest news articles on Congress.
+    %li Expand government officials to the city level for Oregon.
+    %li Return each Congress member's voting record for the most recent session.
+    %li Create user profiles that allow tracking Congress' news articles and votes.

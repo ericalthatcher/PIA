@@ -17,11 +17,21 @@ a:hover {
 
 }
 
-.h2 {
-  color: #791125;
-
+h2 {
+  color: #bc1a3a !important;
 }
 
 .container {
   margin-top: 60px;
+}
+
+input, zip, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  height: auto !important;
 }
