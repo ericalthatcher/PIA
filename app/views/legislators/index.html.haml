@@ -1,6 +1,24 @@
 
 / Legislators is the array of results
 
+- @legislators.each do |legislator|
+  - l = legislator.to_hash
+  .legislator
+    %h3
+      = "#{l['title']} #{l['first_name']} #{l['last_name']} (#{l['party']})"
+    %p
+      Address:
+      = "#{l['office']}"
+    %p
+      Phone:
+      = "#{l['phone']}"
+    %p
+      Twitter:
+      = link_to(l['twitter_id'],"http://www.twitter.com/#{l['twitter_id']}")
+    %p
+      YouTube:
+      = link_to(l['youtube_id'],"http://www.youtube.com/#{l['youtube_id']}")
+    %p
+      Term End:
+      =  "#{l['term_end']}"
 
-= @legislators.map { |l| l['first_name'] }.join(', ')
-= @legislators.map { |k| k['chamber'] }
