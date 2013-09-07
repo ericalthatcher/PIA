@@ -13,6 +13,9 @@
       Phone:
       = "#{l['phone']}"
     %p
+      Website:
+      = link_to(l['website'],"#{l['website']}")
+    %p
       Twitter:
       = link_to(l['twitter_id'],"http://www.twitter.com/#{l['twitter_id']}")
     %p
