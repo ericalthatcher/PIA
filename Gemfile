@@ -1,5 +1,3 @@
-source 'https://rubygems.org'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
@@ -7,9 +5,6 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'twitter-bootstrap-rails'
 gem 'flat-ui-rails'
 gem 'haml-rails'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 gem 'figaro'
 
@@ -47,6 +42,7 @@ group :development do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'meta_request'
+  gem 'pg'
 end
 
 group :test do
@@ -61,6 +57,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 # gem 'httparty'

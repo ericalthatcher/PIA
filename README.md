@@ -20,6 +20,7 @@ Sunlight API Core Information
 
 ## GEMS:
   Erik Michaels-Ober's congress gem (http://rubygems.org/gems/congress)
+  Figaro
 
 ## Contributors
 
