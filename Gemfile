@@ -39,11 +39,11 @@ end
 
 gem 'congress'
 
+gem 'pg'
+
 group :development do
-  gem 'awesome_print'
   gem 'better_errors'
   gem 'meta_request'
-  gem 'pg'
 end
 
 group :test do
@@ -58,7 +58,6 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'pg'
 end
 
 # gem 'httparty'
