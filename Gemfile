@@ -39,25 +39,25 @@ end
 
 gem 'congress'
 
-gem 'pg'
-
 group :development do
   gem 'better_errors'
   gem 'meta_request'
+  gem 'sqlite3'
 end
 
 group :test do
-  gem 'growl', :require => false
 end
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec', :require => false
   gem 'guard-spork', :require => false
+  gem 'sqlite3'
 end
 
 group :production do
   gem 'rails_12factor'
+  gem 'sqlite3'
 end
 
 # gem 'httparty'
