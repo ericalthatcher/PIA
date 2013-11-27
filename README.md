@@ -22,6 +22,6 @@ Sunlight API Core Information
   Erik Michaels-Ober's congress gem (http://rubygems.org/gems/congress)
   Figaro
 
-## Contributors
+## Created and updated by
 
-Created by: [ericalthatcher](https://github.com/ericalthatcher)
+**ericalthatcher** :: [github](https://github.com/ericalthatcher), [twitter](https://twitter.com/a_la_erica)

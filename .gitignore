@@ -15,7 +15,10 @@
 /log/*.log
 /tmp
 
-
+# Ignore DS_Store
+/.DS_Store
+/app/.DS_Store
+/app/assets/.DS_Store
 
 
 
