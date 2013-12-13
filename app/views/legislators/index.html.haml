@@ -4,6 +4,8 @@
 - @legislators.each do |legislator|
   - l = legislator.to_hash
   .legislator
+    %p
+      = image_tag"#{l['bioguide_id']}.jpg"
     %h3
       = "#{l['title']} #{l['first_name']} #{l['last_name']} (#{l['party']})"
     %p
