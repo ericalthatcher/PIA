@@ -6,4 +6,7 @@ class LegislatorsController < ApplicationController
     @legislators = Congress.new.legislators_locate(@zip).results
   end
 
+  # def photo(:bioguide_id)
+
+  # end
 end
